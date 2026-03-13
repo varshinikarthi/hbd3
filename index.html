@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday 🎉</title>
+
+<style>
+body{
+background:pink;
+text-align:center;
+font-family:Arial;
+}
+
+h1{
+color:white;
+font-size:40px;
+}
+
+button{
+padding:12px 20px;
+font-size:18px;
+border:none;
+border-radius:20px;
+background:#ff4d88;
+color:white;
+margin:10px;
+cursor:pointer;
+}
+
+img{
+width:200px;
+margin:10px;
+border-radius:15px;
+box-shadow:0 0 10px white;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>🎉 Happy Birthday My Friend 🎉</h1>
+
+<p>Wishing you a day filled with happiness and laughter 💗</p>
+
+<h2>🎁 Open Your Gift</h2>
+<button onclick="openGift()">Open Gift</button>
+
+<br>
+
+<button onclick="playSong()">🎵 Play Song</button>
+
+<h2>📷 Memories</h2>
+
+<div class="gallery">
+
+<img src="https://i.ibb.co/7tKKh6XL/IMG-20260312-210809-149.jpg">
+
+<img src="https://i.ibb.co/W456JhS7/IMG-20260312-210918-319.jpg">
+
+<img src="https://i.ibb.co/YFs84kyB/IMG-20260312-210802-913.jpg">
+
+</div>
+
+<h2>💌 Special Message</h2>
+
+<p>
+You are not just my friend, you are one of the best memories in my life.  
+Thank you for always being there.  
+Happy Birthday and stay happy always! 🎉
+</p>
+
+<h2>🎂 Cut the Cake</h2>
+
+<button onclick="cutCake()">Cut Cake</button>
+
+<script>
+
+function playSong(){
+window.open("PASTE_SPOTIFY_LINK_HERE");
+}
+
+function openGift(){
+alert("🎁 Surprise! Happy Birthday!");
+confetti({
+particleCount:150,
+spread:100
+});
+}
+
+function cutCake(){
+alert("🎂 Cake Cut! Let's Celebrate!");
+confetti({
+particleCount:250,
+spread:150
+});
+}
+
+</script>
+
+</body>
+</html>
